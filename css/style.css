@@ -65,15 +65,12 @@ __________________*/
 Header Logo e Upgrade
 __________________*/
 
-.container-header {
+.header-centro {
 justify-content: space-between;
 align-items: center;
 padding: .625rem .3125rem 0 .3125rem;;
 }
 
-.nav-centro {
-    padding: .3125rem;
-}
 
 #btn-upgrade {
     color: var(--bianco);
@@ -94,7 +91,7 @@ __________________*/
 
 
 
-.nav-sx {
+#nav-sx {
     background-color: var(--neronero);
     width: 14.375rem;
     padding: 2.5rem 0 0 1.5625rem;
@@ -111,16 +108,11 @@ color: var(--grigetto);
 padding: .3125rem;
 }
 
-.nav-centro a,
+.header-centro a,
 .casa a {
     color: var(--bianco);
     font-weight: 600;
 }
-
-
-/*_________________
-Logo sinistra
-__________________*/
 
 /*_________________
 Playlist sinistra

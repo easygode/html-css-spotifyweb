@@ -19,16 +19,19 @@
     <!--Header Logo e Upgrade-->
     <header>
         <div id="header">
-            <div class="container-header flex">
-                <div class="nav-centro">
+            <div class="container-header">
+                <div class="header-centro flex">
                     <div id="logo">
                         <a href="#"><i class="fa-brands fa-spotify"></i></a>
                         <img src="img/logo.svg" alt="logo">
                     </div>
+                    <div id="upgrade">
+                        <a href="#"><button id="btn-upgrade">EFFETTUA L'UPGRADE</button></a>
+                    </div>
                 </div>
-                <div id="upgrade">
-                    <a href="#"><button id="btn-upgrade">EFFETTUA L'UPGRADE</button></a>
-                </div>
+                    <nav class="nav-centro">
+
+                    </nav>
             </div>
         </div>
              
@@ -38,49 +41,77 @@
         </nav>
         <!--/Menu Navigazione-->
     </header>
-    <!--Header -->
+    <!--/Header Logo e Upgrade-->
+
+    <!--Aside sinistra-->
     <aside>
         <div class="container-aside">
-                <!--Aside Sinistra-->
             <nav>
-                <div class="nav-sx">
+                <div id="nav-sx">
+                    <!--Home Cerca Libreria-->
+                    <div class="hcl">
+                        <ul class="menu-sx">
+                            <li class="casa">
+                                <i class="fa-solid fa-house"></i>
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="cerca">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <a href="#">Cerca</a>
+                            </li>
+                            <li class="libreria">
+                                <i class="fa-regular fa-bookmark"></i>
+                                <a href="#">La tua libreria</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/Home Cerca Libreria-->
 
-            <!--/Logo e Upgrade-->
-                    <ul class="menu-sx">
-                        <li class="casa">
-                            <i class="fa-solid fa-house"></i>
-                            <a href="#">Home</a>
-                        </li>
-                        <li class="cerca">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <a href="#">Cerca</a>
-                        </li>
-                        <li class="libreria">
-                            <i class="fa-regular fa-bookmark"></i>
-                            <a href="#">La tua libreria</a>
-                        </li>
-                    </ul>
+                    <!--Playlist Sinistra-->
+                    <div id="playlist-sx">
+                        <div class="playlist">
+                            <strong>PLAYLIST</strong>
+                        </div>               
+                        <div class="crea-playlist">
+                            <i class="fas fa-plus"></i>
+                            <span id="crea">Crea Playlist</span>
+                        </div>
+                        <div class="nome-playlist">
+                            <ul>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>     
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>     
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--/Playlist Sinistra-->
+
+                    <!--Download sinistra-->
+                    <div id="download">
+                        <div class="download-install">
+                            <i class="far fa-arrow-alt-circle-down"></i>
+                            <span>Installa app</span>
+                        </div>     
+                    </div>
+
+                    <!--/Download sinistra-->
+
+                    <!--Utente Sinistra-->
+                    <div id="utente-sx">
+                        <div class="utente">
+                            <img src="/img/profile.svg" alt="profile">
+                        </div>
+                        <div class="nome-utente">
+                            <span>John Doe</span>
+                        </div>
+                    </div>
+                    <!--/Utente Sinistra-->
                 </div>
-                <!--/Logo Sinistra-->
-
-                <!--Playlist Sinistra-->
-                <div id="playlist-sx">
-
-                </div>
-                <!--/Playlist Sinistra-->
-
-                <!--Donwnload Sinistra-->
-                <div id="donwload-sx">
-
-                </div>
-                <!--/Download Sinistra-->
-
-                <!--Utente Sinistra-->
-                <div id="utente-sx">
-
-                </div>
-                <!--/Utente Sinistra-->
-
             </nav>
         </div>
     </aside>

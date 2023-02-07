@@ -53,12 +53,20 @@ a {
 }
 
 /*_________________
+Main
+__________________*/
+.container-dischi {
+    width: 100%;
+    background-color: var(--nerino);
+}
+
+/*_________________
 Header
 __________________*/
 
 #header {
-    background-color: var(--neronero);
     height: 5.625rem;
+    background-color: var(--nero)
 }
 
 /*___________________
@@ -83,7 +91,22 @@ padding: .625rem .3125rem 0 .3125rem;;
 /*_________________
 Menu Navigazione
 __________________*/
+.container-centro {
+    width: 70%;
+}
 
+.nav-centro {
+    flex-wrap: wrap;
+
+}
+
+.proposte {
+    color: var(--grigione);
+    justify-content: center;
+    padding: 1.25rem 0 2.5rem 0;
+    gap: 1.875rem;
+    font-weight: 700;
+}
 
 /*_________________
 Aside sinistra
@@ -101,17 +124,27 @@ __________________*/
     width: 8.125rem;
 }
 
-.menu-sx li,
-.menu-sx a
+#nav-sx li,
+#nav-sx a
  {
 color: var(--grigetto);
 padding: .3125rem;
 }
 
 .header-centro a,
-.casa a {
+.home a {
     color: var(--bianco);
     font-weight: 600;
+}
+
+.nome-playlist a {
+    color: var(--grigetto);
+    padding: .625rem 0 .625rem 0 ;
+    line-height: 3.125rem;
+}
+
+.playlist-sx i {
+    color: var(--grigetto);
 }
 
 /*_________________
@@ -123,12 +156,25 @@ __________________*/
 Download sinistra
 __________________*/
 
-
+.download {
+    color: var(--grigetto);
+}
 /*_________________
 Utente sinistra
 __________________*/
 
+.utente-sx {
+    align-items: center;
+}
 
+#profilo {
+    width: 1.25rem;
+}
+
+.nome-utente {
+color: var(--grigetto);
+padding: 1.25rem 0 1.25rem 0 ;
+}
 
 /*_________________
 Main Recent

@@ -29,128 +29,130 @@
                         <a href="#"><button id="btn-upgrade">EFFETTUA L'UPGRADE</button></a>
                     </div>
                 </div>
-                    <nav class="nav-centro">
-
-                    </nav>
             </div>
         </div>
              
         <!--Menu Navigazione-->
-        <nav>
+        <div class="container-centro">
 
-        </nav>
-        <!--/Menu Navigazione-->
     </header>
     <!--/Header Logo e Upgrade-->
 
-    <!--Aside sinistra-->
-    <aside>
-        <div class="container-aside">
-            <nav>
-                <div id="nav-sx">
-                    <!--Home Cerca Libreria-->
-                    <div class="hcl">
-                        <ul class="menu-sx">
-                            <li class="casa">
-                                <i class="fa-solid fa-house"></i>
-                                <a href="#">Home</a>
-                            </li>
-                            <li class="cerca">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                                <a href="#">Cerca</a>
-                            </li>
-                            <li class="libreria">
-                                <i class="fa-regular fa-bookmark"></i>
-                                <a href="#">La tua libreria</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--/Home Cerca Libreria-->
-
-                    <!--Playlist Sinistra-->
-                    <div id="playlist-sx">
-                        <div class="playlist">
-                            <strong>PLAYLIST</strong>
-                        </div>               
-                        <div class="crea-playlist">
-                            <i class="fas fa-plus"></i>
-                            <span id="crea">Crea Playlist</span>
-                        </div>
-                        <div class="nome-playlist">
-                            <ul>
-                                <li><a href="#">Nome Playlist</a></li>
-                                <li><a href="#">Nome Playlist</a></li>
-                                <li><a href="#">Nome Playlist</a></li>
-                                <li><a href="#">Nome Playlist</a></li>     
-                                <li><a href="#">Nome Playlist</a></li>
-                                <li><a href="#">Nome Playlist</a></li>     
-                                <li><a href="#">Nome Playlist</a></li>
-                                <li><a href="#">Nome Playlist</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!--/Playlist Sinistra-->
-
-                    <!--Download sinistra-->
-                    <div id="download">
-                        <div class="download-install">
-                            <i class="far fa-arrow-alt-circle-down"></i>
-                            <span>Installa app</span>
-                        </div>     
-                    </div>
-
-                    <!--/Download sinistra-->
-
-                    <!--Utente Sinistra-->
-                    <div id="utente-sx">
-                        <div class="utente">
-                            <img src="/img/profile.svg" alt="profile">
-                        </div>
-                        <div class="nome-utente">
-                            <span>John Doe</span>
-                        </div>
-                    </div>
-                    <!--/Utente Sinistra-->
-                </div>
-            </nav>
-        </div>
-    </aside>
-    <!--/Aside Sinistra-->
-
-
-
-  
-
-    <!--Main-->
     <main>
-        <div id="container-main">
+        <div class="container-main flex">
+            <!--Aside sinistra-->
+            <aside>
+                <div class="container-aside">
 
-            <!--Main Recent-->
-            <div class="recente">
+                    <!--Navigazione sinistra-->
+                    <nav>
+                        <div id="nav-sx">
+                            <!--Home Cerca Libreria-->
+                            <div class="hcl">
+                                <ul>
+                                    <li class="home">
+                                        <i class="fa-solid fa-house"></i>
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li class="cerca">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        <a href="#">Cerca</a>
+                                    </li>
+                                    <li class="libreria">
+                                        <i class="fa-regular fa-bookmark"></i>
+                                        <a href="#">La tua libreria</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--/Home Cerca Libreria-->
 
-    
+                            <!--Playlist Sinistra-->
+                            <div id="playlist-sx">
+                                <div class="playlist">
+                                    <strong>PLAYLIST</strong>
+                                </div>               
+                                <div class="crea-playlist">
+                                    <i class="fa-solid fa-square-plus"></i>
+                                    <span id="crea">Crea Playlist</span>
+                                </div>
+                                <div class="nome-playlist">
+                                    <ul>
+                                        <li><a href="#">Nome Playlist</a></li>
+                                        <li><a href="#">Nome Playlist</a></li>
+                                        <li><a href="#">Nome Playlist</a></li>
+                                        <li><a href="#">Nome Playlist</a></li>     
+                                        <li><a href="#">Nome Playlist</a></li>
+                                        <li><a href="#">Nome Playlist</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--/Playlist Sinistra-->
+
+                            <!--Download sinistra-->
+                            <div class="download">
+                                <div class="download-install">
+                                    <i class="fa-regular fa-circle-down"></i>
+                                    <span>Installa app</span>
+                                </div>     
+                            </div>
+                            <!--/Download sinistra-->
+
+                            <!--Utente Sinistra-->
+                            <div class="utente-sx flex">
+                                <div class="utente">
+                                    <img id=profilo src="/img/profile.svg" alt="profile">
+                                </div>
+                                <div class="nome-utente">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                            <!--/Utente Sinistra-->
+                        </div>
+                    </nav>
+                    <!--/Navigazione sinistra-->
+                </div>
+            </aside>
+            <!--/Aside sinistra-->
+            
+            <!---->
+            <div class="container-dischi">
+                <!--Main Menu centrale-->
+                <nav class="nav-centro">
+                    <div class="proposte flex">
+                        <div>IN EVIDENZA</div>
+                        <div>PODCAST</div>
+                        <div>CLASSIFICHE</div>
+                        <div>GENERI E MOOD</div>
+                        <div>NUOVE USCITE</div>
+                        <div>SCOPRI</div>
+                    </div>
+                </nav>
+                <!--/Main Menu centrale-->
+            
+                <!--Main Recent-->
+                <div class="recente">
+
+
+                </div>
+                <!--/Main Recent-->
+
+                <!--Main Consigli-->
+                <div class="consigli">
+
+
+                </div>
+                <!--/Main Consigli-->
+
+                <!--Main Popular-->
+                <div class="popolare">
+
+
+                </div>
+                <!--/Main Popular-->
             </div>
-            <!--/Main Recent-->
-
-            <!--Main Consigli-->
-            <div class="consigli">
-
-
-            </div>
-            <!--/Main Consigli-->
-
-            <!--Main Popular-->
-            <div class="popolare">
-
-
-            </div>
-            <!--/Main Popular-->
-
         </div>
     </main>
-    <!--/Main-->
-
-   
+    <!--Main-->
 
     <!--/Footer-->
     <footer>

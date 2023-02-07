@@ -5,33 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Web</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     <!--Google Font Montserrat-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--CSS Style-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-    <!--Header -->
+    <!--Header Logo e Upgrade-->
     <header>
-        <!--Logo e Upgrade-->
         <div id="header">
-            <div id="logo">
-
-            </div>
-            <div id="upgrade">
-
+            <div class="container-header flex">
+                <div class="nav-centro">
+                    <div id="logo">
+                        <a href="#"><i class="fa-brands fa-spotify"></i></a>
+                        <img src="img/logo.svg" alt="logo">
+                    </div>
+                </div>
+                <div id="upgrade">
+                    <a href="#"><button id="btn-upgrade">EFFETTUA L'UPGRADE</button></a>
+                </div>
             </div>
         </div>
-        <!--/Logo e Upgrade-->
-       
+             
         <!--Menu Navigazione-->
         <nav>
 
         </nav>
         <!--/Menu Navigazione-->
     </header>
+    <!--Header -->
+    <aside>
+        <div class="container-aside">
+                <!--Aside Sinistra-->
+            <nav>
+                <div class="nav-sx">
+
+            <!--/Logo e Upgrade-->
+                    <ul class="menu-sx">
+                        <li class="casa">
+                            <i class="fa-solid fa-house"></i>
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="cerca">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <a href="#">Cerca</a>
+                        </li>
+                        <li class="libreria">
+                            <i class="fa-regular fa-bookmark"></i>
+                            <a href="#">La tua libreria</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--/Logo Sinistra-->
+
+                <!--Playlist Sinistra-->
+                <div id="playlist-sx">
+
+                </div>
+                <!--/Playlist Sinistra-->
+
+                <!--Donwnload Sinistra-->
+                <div id="donwload-sx">
+
+                </div>
+                <!--/Download Sinistra-->
+
+                <!--Utente Sinistra-->
+                <div id="utente-sx">
+
+                </div>
+                <!--/Utente Sinistra-->
+
+            </nav>
+        </div>
+    </aside>
+    <!--/Aside Sinistra-->
+
+
+
+  
 
     <!--Main-->
     <main>
@@ -62,31 +119,7 @@
     </main>
     <!--/Main-->
 
-    <!--Aside Sinistra-->
-    <aside>
-        <div class="container-aside">
-
-            <!--Playlist Sinistra-->
-            <div id="playlist-sx">
-
-            </div>
-            <!--/Playlist Sinistra-->
-
-            <!--Donwnload Sinistra-->
-            <div id="donwload-sx">
-
-            </div>
-            <!--/Download Sinistra-->
-
-            <!--Utente Sinistra-->
-            <div id="utente-sx">
-
-            </div>
-            <!--/Utente Sinistra-->
-
-        </div>
-    </aside>
-    <!--/Aside Sinistra-->
+   
 
     <!--/Footer-->
     <footer>

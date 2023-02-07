@@ -20,16 +20,68 @@ body {
 Common
 __________________*/
 
+:root {
+    --neronero: #000000;
+    --nerino: #141922;
+    --nero: #080b12;
+    --gribar: #fbfbfb;
+    --grigiobar: #c8c8c8;
+    --grigiospento: #c1c1c1;
+    --grigino: #d2d2d2;
+    --grigetto: #878787;
+    --grigione: #7d7f84;
+    --grigioni: #6e6e6e;
+    --grigissimo: #282828;
+    --bianco: #ffffff;
+    --verdacido: #adff2f;
+}
+
+ul li {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.in-bl {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
 
 /*_________________
 Header
 __________________*/
 
+#header {
+    background-color: var(--neronero);
+    height: 5.625rem;
+}
 
 /*___________________
 Header Logo e Upgrade
 __________________*/
 
+.container-header {
+justify-content: space-between;
+align-items: center;
+padding: .625rem .3125rem 0 .3125rem;;
+}
+
+.nav-centro {
+    padding: .3125rem;
+}
+
+#btn-upgrade {
+    color: var(--bianco);
+    background-color: var(--neronero) ;
+    border: .125rem solid var(--bianco) ;
+    border-radius: 1.25rem;
+    padding: .625rem 2.5rem .625rem 2.5rem ;
+}
 
 /*_________________
 Menu Navigazione
@@ -37,23 +89,38 @@ __________________*/
 
 
 /*_________________
-Main Recent
-__________________*/
-
-
-/*_________________________________
-Main Consigli - Creato per utente
-_________________________________*/
-
-
-/*________________________________
-Main Popular - Artisti popolari
-________________________________*/
-
-/*_________________
 Aside sinistra
 __________________*/
 
+
+
+.nav-sx {
+    background-color: var(--neronero);
+    width: 14.375rem;
+    padding: 2.5rem 0 0 1.5625rem;
+}
+
+#logo {
+    width: 8.125rem;
+}
+
+.menu-sx li,
+.menu-sx a
+ {
+color: var(--grigetto);
+padding: .3125rem;
+}
+
+.nav-centro a,
+.casa a {
+    color: var(--bianco);
+    font-weight: 600;
+}
+
+
+/*_________________
+Logo sinistra
+__________________*/
 
 /*_________________
 Playlist sinistra
@@ -70,6 +137,40 @@ Utente sinistra
 __________________*/
 
 
+
+/*_________________
+Main Recent
+__________________*/
+
+
+/*_________________________________
+Main Consigli - Creato per utente
+_________________________________*/
+
+
+/*________________________________
+Main Popular - Artisti popolari
+________________________________*/
+
+
+
 /*________________
 Footer
 ________________*/
+
+
+/*________________
+Responsivita
+________________*/
+
+@media screen and (max-width: 34.5rem ) {
+
+}
+
+@media screen and (max-width: 40rem ) {
+    
+}
+
+@media screen and (max-width: 54.875rem) {
+    
+}

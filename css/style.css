@@ -177,14 +177,29 @@ padding: 1.25rem 0 1.25rem 0 ;
 }
 
 /*_________________
+Main all
+___________________*/
+
+
+/*_________________
 Main Recent
 __________________*/
 
+.recente {
+    color: var(--bianco)
+}
+
+.disco {
+    flex-wrap: wrap;
+}
 
 /*_________________________________
 Main Consigli - Creato per utente
 _________________________________*/
 
+.consigli {
+    color: var(--bianco)
+}
 
 /*________________________________
 Main Popular - Artisti popolari

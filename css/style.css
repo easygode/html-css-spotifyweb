@@ -36,12 +36,22 @@ __________________*/
     --verdacido: #adff2f;
 }
 
+a {
+    text-decoration: none;
+    color: var(--grigioni);
+    cursor: pointer;
+}
+
 ul li {
     list-style: none;
 }
 
 .flex {
     display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
 }
 
 .in-bl {
@@ -112,10 +122,13 @@ __________________*/
 Aside sinistra
 __________________*/
 
-
+.container-aside {
+    height: 100%;
+    background-color: var(--neronero);
+}
 
 #nav-sx {
-    background-color: var(--neronero);
+
     width: 14.375rem;
     padding: 2.5rem 0 0 1.5625rem;
 }
@@ -137,19 +150,26 @@ padding: .3125rem;
     font-weight: 600;
 }
 
+
+/*_________________
+Playlist sinistra
+__________________*/
+
+.playlist-sx i {
+    color: var(--grigetto);
+}
+
+.crea-playlist,
 .nome-playlist a {
     color: var(--grigetto);
     padding: .625rem 0 .625rem 0 ;
     line-height: 3.125rem;
 }
 
-.playlist-sx i {
-    color: var(--grigetto);
+.crea-playlist i{
+    font-size: 2rem;
+    justify-content: center;
 }
-
-/*_________________
-Playlist sinistra
-__________________*/
 
 
 /*_________________
@@ -158,7 +178,16 @@ __________________*/
 
 .download {
     color: var(--grigetto);
+    border-bottom: .125rem solid var(--grigetto);
+    border-width: 50%;
+    padding: 1rem 0 1rem 0;
 }
+
+.utente-down {
+    position: relative;
+    top: 85rem;
+}
+
 /*_________________
 Utente sinistra
 __________________*/
@@ -173,13 +202,53 @@ __________________*/
 
 .nome-utente {
 color: var(--grigetto);
-padding: 1.25rem 0 1.25rem 0 ;
+padding: 1.25rem;
 }
 
 /*_________________
 Main all
 ___________________*/
 
+.disco {
+    gap: 1.875rem;
+    padding: 1.5625rem;
+}
+
+.info-disco {
+    width: 18.75rem;
+}
+
+.copertina-disco i {
+    position: absolute;
+    z-index: 5;
+    font-size: 60px;
+    top: 35%;
+    left: 35%;
+    transform: calc(-50%, -50%);
+    display: none;
+}
+
+.copertina-disco::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: var(--nero);
+    opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.categoria {
+    padding: 1.875rem;
+    font-size: 2.5rem;
+}
+
+.categoria p {
+    font-size: 1rem;
+    color: var(--grigino);
+}
 
 /*_________________
 Main Recent
@@ -187,10 +256,6 @@ __________________*/
 
 .recente {
     color: var(--bianco)
-}
-
-.disco {
-    flex-wrap: wrap;
 }
 
 /*_________________________________
@@ -211,13 +276,69 @@ ________________________________*/
 Footer
 ________________*/
 
+.container-footer {
+    width: 100%;
+    background-color: var(--grigissimo);
+    color: var(--bianco);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.col1-footer {
+    width: 20%;
+}
+
+.footer-riga1 {
+    justify-content: space-between;
+    color: var(--bianco);
+    gap: .625rem;
+}
+
+.col1-footer img {
+    width: 6.25rem;
+}
+
+.titolo-disco {
+    padding-left: .625rem;
+}
+
+.col2-footer,
+.player-footer,
+.col4-footer {
+    gap: 2rem;
+}
+
+.elapse {
+    width: 19rem;
+    height: .3125rem;
+    background-color: var(--bianco);
+    border-radius: .125rem;
+    margin: 1rem;
+}
+
+.barra-volume {
+    width: 8rem;
+    height: .3125rem;
+    background-color: var(--bianco);
+    border-radius: .125rem;
+    margin: 0.25rem 1.25rem 0.25rem 1.25rem;
+}
+
+.timer-footer {
+    position: relative;
+    right: 6.25rem;
+}
+
 
 /*________________
 Responsivita
 ________________*/
 
 @media screen and (max-width: 34.5rem ) {
-
+ #logo, li a {
+    display: none;
+ }
 }
 
 @media screen and (max-width: 40rem ) {

@@ -59,6 +59,10 @@ ul li {
     flex-wrap: wrap;
 }
 
+.column {
+    flex-direction: column;
+}
+
 .block {
     display: block;
 }
@@ -149,9 +153,15 @@ __________________*/
     padding: 2.5rem 0 0 1.5625rem;
 }
 
-#logo {
+.logo img {
     width: 8.125rem;
 }
+
+.logo i {
+    font-size: 1.25rem;
+    padding-left: 1.5rem;
+}
+
 
 #nav-sx li,
 #nav-sx a
@@ -170,6 +180,17 @@ padding: .3125rem;
 /*_________________
 Playlist sinistra
 __________________*/
+
+aside .playlist {
+    display:none;
+    flex-grow:1;
+    overflow-y: hidden;
+}
+
+aside .playlist .nome-playlist {
+    flex-grow:1;
+    overflow-y: auto;
+}
 
 .playlist-sx i {
     color: var(--grigetto);
@@ -195,13 +216,7 @@ __________________*/
 .download {
     color: var(--grigetto);
     border-bottom: .125rem solid var(--grigetto);
-    border-width: 50%;
-    padding: 1rem 0 1rem 0;
-}
-
-.utente-down {
-    position: relative;
-    top: 85rem;
+    padding-bottom: 0.5rem;
 }
 
 /*_________________
@@ -209,7 +224,8 @@ Utente sinistra
 __________________*/
 
 .utente-sx {
-    align-items: center;
+    padding-top: 0.5rem;
+    margin-top: auto;
 }
 
 #profilo {
@@ -218,7 +234,6 @@ __________________*/
 
 .nome-utente {
 color: var(--grigetto);
-padding: 1.25rem;
 }
 
 /*_________________
@@ -372,30 +387,51 @@ Responsivita
 ________________*/
 
 @media screen and (max-width: 34.5rem ) {
- #logo img {
-    display: none;
- }
 
+.logo img {
+    display: none;
+}
+
+.logo i {
+    display: block;
+}
  .container-aside {
     width: 3.5rem;
+}
 
- }
+.hcl a {
+    display: none;
+}
 
- .container-centro {
-    width: 100%;
-    margin: 0 auto;
- }
+.hcl i {
+    display: block;
+}
+
+.nome-playlist {
+    display: none;
+}
+
+.utente-down a {
+display: none;
+}
 
 }
 
-@media screen and (max-width: 40rem ) {
-    #logo i, li a {
+@media screen and (min-width: 34.5rem ) {
+    .logo img {
+        display: block;
+    }
+    
+    .logo i {
         display: none;
-     }
+    }
 }
 
-@media screen and (max-width: 54.875rem) {
-    #logo i, li a {
-        display: none;
-     }
+@media screen and (min-width: 40rem ) {
+
+
+}
+
+@media screen and (min-width: 54.875rem) {
+
 }

@@ -59,8 +59,12 @@ ul li {
     flex-wrap: wrap;
 }
 
-.in-bl {
-    display: inline-block;
+.block {
+    display: block;
+}
+
+.initial {
+    display: initial;
 }
 
 /*_________________
@@ -266,58 +270,101 @@ ________________________________*/
 Footer
 ________________*/
 
-.container-footer {
+footer {
     width: 100%;
+    height: 5.625rem;
     background-color: var(--grigissimo);
-    color: var(--bianco);
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
+    display: flex;
 }
 
-.col1-footer {
+.footer-album {
     width: 20%;
+    padding: 1.5625rem .625rem;
+    display: flex;
+    align-items: center;
+}
+.footer-album img {
+    margin-right: .75rem;
+    height: 100%;
+}
+.sinister {
+    margin-right: 2.5rem;
+    font-size: .875rem;
 }
 
-.footer-riga1 {
-    justify-content: space-between;
+.sinister strong {
     color: var(--bianco);
-    gap: .625rem;
 }
 
-.col1-footer img {
-    width: 6.25rem;
+.sinister small {
+    color: var(--grigetto);
+}
+.footer-album .icone {
+    gap: 15px;
+}
+.footer-album .icone i {
+    color: var(--grigetto);
 }
 
-.titolo-disco {
-    padding-left: .625rem;
+.footer-tempo {
+    width: 60%;
+    padding: .9375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.0625rem;
 }
 
-.col2-footer,
-.player-footer,
-.col4-footer {
-    gap: 2rem;
+.footer-tempo ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1.25rem;
 }
 
-.elapse {
-    width: 19rem;
+.footer-tempo ul li {
+    color: var(--bianco);
+    font-size: 1rem;
+}
+
+.footer-barra {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    color: var(--bianco);
+    font-size: .9375rem;
+}
+
+.barra {
     height: .3125rem;
-    background-color: var(--bianco);
-    border-radius: .125rem;
-    margin: 1rem;
+    width: 50%;
+    border-radius: 1.5625rem;
+    background-color: var(--grigetto);
 }
 
-.barra-volume {
-    width: 8rem;
-    height: .3125rem;
-    background-color: var(--bianco);
-    border-radius: .125rem;
-    margin: 0.25rem 1.25rem 0.25rem 1.25rem;
+.footer-volume {
+    width: 20%;
+    padding: 1.875rem .625rem;
+    display: flex;
+    align-items: center;
+    gap: .9375rem;
+    justify-content: flex-end;
 }
 
-.timer-footer {
-    position: relative;
-    right: 6.25rem;
+.footer-volume ul {
+    display: flex;
+    list-style-type: none;
+    gap: .9375rem;
+}
+
+.footer-volume ul li {
+    color: var(--bianco);
+    font-size: .875rem;
+}
+
+small {
+    display: block;
 }
 
 /*________________

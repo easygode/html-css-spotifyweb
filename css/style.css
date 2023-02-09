@@ -91,6 +91,10 @@ __________________*/
 Header
 __________________*/
 
+main {
+    height: calc(100vh- 90px);
+}
+
 #header {
     height: 5.625rem;
     background-color: var(--nero)
@@ -146,9 +150,10 @@ __________________*/
 .container-aside {
     height: 100%;
     background-color: var(--neronero);
+    position: relative;
 }
 
-#nav-sx {
+.nav-sx {
     width: 14.375rem;
     padding: 2.5rem 0 0 1.5625rem;
 }
@@ -163,8 +168,8 @@ __________________*/
 }
 
 
-#nav-sx li,
-#nav-sx a
+.nav-sx li,
+.nav-sx a
  {
 color: var(--grigetto);
 padding: .3125rem;
@@ -222,6 +227,12 @@ __________________*/
 /*_________________
 Utente sinistra
 __________________*/
+
+.utente-down {
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 1.25rem;
+}
 
 .utente-sx {
     padding-top: 0.5rem;
@@ -286,7 +297,6 @@ Footer
 ________________*/
 
 footer {
-    width: 100%;
     height: 5.625rem;
     background-color: var(--grigissimo);
     display: flex;
@@ -314,10 +324,15 @@ footer {
 .sinister small {
     color: var(--grigetto);
 }
-.footer-album .icone {
+
+.icone {
     gap: 15px;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+
 }
-.footer-album .icone i {
+.icone i {
     color: var(--grigetto);
 }
 
@@ -399,6 +414,13 @@ ________________*/
     width: 3.5rem;
 }
 
+ .icone {
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2rem;
+}
+
 .hcl a {
     display: none;
 }
@@ -414,6 +436,7 @@ ________________*/
 .utente-down a {
 display: none;
 }
+
 
 }
 

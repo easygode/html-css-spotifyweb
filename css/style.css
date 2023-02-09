@@ -83,8 +83,17 @@ __________________*/
 .copertina-disco i {
     font-size: 3.75rem;
     position: relative;
-    top: -12.5rem;
-    left: 6.25rem;
+    top: -13rem;
+    left: 6rem;
+    display: none;
+}
+
+.copertina-disco {
+    cursor: pointer;
+}
+
+.copertina-disco:hover i {
+    display: block;
 }
 
 /*_________________
@@ -290,7 +299,9 @@ _________________________________*/
 Main Popular - Artisti popolari
 ________________________________*/
 
-
+#enaudi {
+    width: 18.75rem;
+}
 
 /*________________
 Footer
@@ -429,12 +440,10 @@ ________________*/
     display: block;
 }
 
-.nome-playlist {
+.nome-playlist,
+.utente-down a,
+.crea-playlist a {
     display: none;
-}
-
-.utente-down a {
-display: none;
 }
 
 
